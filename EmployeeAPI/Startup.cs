@@ -27,7 +27,9 @@ namespace EmployeeAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            
             services.AddMvc();
+            services.AddCors();
             var connection = @"Server=DESKTOP-KK1QB16;Database=EmployeeDb;Trusted_Connection=True";
             services.AddDbContext<EmployeeDbContext>(options => options.UseSqlServer(connection));
             services.AddTransient<IEmployeeData, EmployeeData>();

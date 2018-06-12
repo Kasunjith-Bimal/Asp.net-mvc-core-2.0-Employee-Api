@@ -25,29 +25,67 @@ namespace EmployeeAPI.Controllers
             return _employeeData.getAllEmployeeData();
         }
 
-        // GET api/<controller>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        //// GET api/<controller>/5
+       
+        [HttpGet("{id}", Name = "getnamedutels")]
+        public EemployeeDb Get(string id)
         {
-            return "value";
+            return _employeeData.getEmployeeNameDetils(id);
+        }
+        [HttpGet("{id:int}")]
+        public EemployeeDb Get(int id)
+        {
+            return _employeeData.getEmployeeById(id);
         }
 
-        // POST api/<controller>
+        // POST api/values
+        //[HttpPost]
+        //public void Post([FromBody]EemployeeDb value)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        _employeeData.addEmployee(value);
+        //    }
+        //}
+        //// POST api/<controller>
+        [Route("AddUser")]
         [HttpPost]
-        public void Post([FromBody]string value)
+        public void AddUser([FromBody]EemployeeDb obj)
         {
-        }
+            if (ModelState.IsValid)
+            {
+                _employeeData.addEmployee(obj);
+            }
 
+        }
+        [Route("SearchEmployee")]
+        [HttpPost]
+        public void SearchEmployee([FromBody]EemployeeDb obj)
+        {
+            if (ModelState.IsValid)
+            {
+                _employeeData.getSeachEmployees(obj.EmployeeName);
+            }
+
+        }
         // PUT api/<controller>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        public void Put(int id, [FromBody]EemployeeDb obj)
         {
+            if (ModelState.IsValid)
+            {
+                _employeeData.updateEmployee(obj);
+            }
         }
 
         // DELETE api/<controller>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            if (ModelState.IsValid)
+            {
+                _employeeData.deleteEmployee(id);
+            }
         }
     }
 }
