@@ -1,0 +1,10 @@
+C:\Users\Rika\Desktop\Asp.net-mvc-core-2.0-Employee-Api\EmployeeAPI\bin\Debug\netcoreapp2.0\EmployeeAPI.deps.json
+C:\Users\Rika\Desktop\Asp.net-mvc-core-2.0-Employee-Api\EmployeeAPI\bin\Debug\netcoreapp2.0\EmployeeAPI.runtimeconfig.json
+C:\Users\Rika\Desktop\Asp.net-mvc-core-2.0-Employee-Api\EmployeeAPI\bin\Debug\netcoreapp2.0\EmployeeAPI.runtimeconfig.dev.json
+C:\Users\Rika\Desktop\Asp.net-mvc-core-2.0-Employee-Api\EmployeeAPI\bin\Debug\netcoreapp2.0\EmployeeAPI.dll
+C:\Users\Rika\Desktop\Asp.net-mvc-core-2.0-Employee-Api\EmployeeAPI\obj\Debug\netcoreapp2.0\EmployeeAPI.csproj.CoreCompileInputs.cache
+C:\Users\Rika\Desktop\Asp.net-mvc-core-2.0-Employee-Api\EmployeeAPI\obj\Debug\netcoreapp2.0\EmployeeAPI.AssemblyInfoInputs.cache
+C:\Users\Rika\Desktop\Asp.net-mvc-core-2.0-Employee-Api\EmployeeAPI\obj\Debug\netcoreapp2.0\EmployeeAPI.AssemblyInfo.cs
+C:\Users\Rika\Desktop\Asp.net-mvc-core-2.0-Employee-Api\EmployeeAPI\bin\Debug\netcoreapp2.0\EmployeeAPI.pdb
+C:\Users\Rika\Desktop\Asp.net-mvc-core-2.0-Employee-Api\EmployeeAPI\obj\Debug\netcoreapp2.0\EmployeeAPI.dll
+C:\Users\Rika\Desktop\Asp.net-mvc-core-2.0-Employee-Api\EmployeeAPI\obj\Debug\netcoreapp2.0\EmployeeAPI.pdb

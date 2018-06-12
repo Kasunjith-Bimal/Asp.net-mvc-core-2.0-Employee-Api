@@ -2,8 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using EmployeeAPI.EmployeAPI.SQL.Data.Servise;
+using EmployeeAPI.EmployeeAPI.SQL.Data.Servise.Interface;
+using EmployeeAPI.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -24,6 +28,9 @@ namespace EmployeeAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            var connection = @"Server=DESKTOP-KK1QB16;Database=EmployeeDb;Trusted_Connection=True";
+            services.AddDbContext<EmployeeDbContext>(options => options.UseSqlServer(connection));
+            services.AddTransient<IEmployeeData, EmployeeData>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
